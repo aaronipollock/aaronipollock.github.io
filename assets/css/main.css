@@ -1805,6 +1805,7 @@ input, select, textarea {
 			border-bottom: dotted 1px rgba(160, 160, 160, 0.65);
 			display: block;
 			margin: 0 1.5em 0 0;
+			font-size: 14px;
 		}
 
 		.author img {
