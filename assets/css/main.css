@@ -3397,6 +3397,11 @@ input, select, textarea {
 			padding-top: 0;
 		}
 
+		.skills-heading {
+			margin-bottom: 26.4px; /* Adjust this value to control the space */
+		}
+
+
 		@media screen and (max-width: 1280px) {
 
 			#sidebar {
