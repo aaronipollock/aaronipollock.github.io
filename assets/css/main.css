@@ -2328,6 +2328,7 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 3em 0;
 			width: 100%;
+			border: 1mm solid #ccc;
 		}
 
 			.image.featured img {
