@@ -2552,6 +2552,10 @@ input, select, textarea {
 					display: none;
 				}
 
+	.technologies {
+		font-size: 50px;
+	}
+	
 	.tech__icon {
 		font-size: 38px; /* Adjust this size as needed */
 	}
