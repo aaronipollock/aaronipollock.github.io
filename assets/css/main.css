@@ -2552,9 +2552,9 @@ input, select, textarea {
 					display: none;
 				}
 
-				.tech__icon {
-					font-size: 50px; /* Adjust this size as needed */
-				}
+	.tech__icon {
+		font-size: 25px; /* Adjust this size as needed */
+	}
 
 /* Posts */
 
