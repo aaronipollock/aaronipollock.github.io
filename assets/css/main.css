@@ -2562,6 +2562,12 @@ input, select, textarea {
 
 /* Posts */
 
+	.getsy-badges {
+		display: flex;
+		align-items: flex-end;
+		margin-left: 20px;
+	}
+
 	ul.posts {
 		list-style: none;
 		padding: 0;
