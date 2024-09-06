@@ -3454,13 +3454,15 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			width: 100%;
-			font-size: 32px;
 		}
 
 		#intro .logo img {
 			display: block;
 			margin-left: -0.25em;
-			width: 4.5em;
+			width: 6em;
+			height: 6em;
+			border-radius: 50%;
+			object-fit: cover;
 		}
 
 	#intro header h2 {
