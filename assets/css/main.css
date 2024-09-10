@@ -3461,7 +3461,7 @@ input, select, textarea {
 			margin-left: -0.25em;
 			width: 6em;
 			height: 6em;
-			border-radius: 50%;
+			/* border-radius: 50%; */
 			object-fit: cover;
 		}
 
