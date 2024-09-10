@@ -3462,7 +3462,7 @@ input, select, textarea {
 			width: 8em;
 			height: 6em;
 			/* border-radius: 50%; */
-			object-fit: cover;
+			/* object-fit: cover; */
 		}
 
 	#intro header h2 {
