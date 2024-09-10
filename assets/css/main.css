@@ -3460,7 +3460,7 @@ input, select, textarea {
 			display: block;
 			margin-left: -0.25em;
 			width: 8em;
-			/* height: 6em; */
+			height: 8em;
 			/* border-radius: 50%; */
 			object-fit: cover;
 		}
