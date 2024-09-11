@@ -3440,6 +3440,7 @@ input, select, textarea {
 		overflow: hidden;
 		position: relative;
 		width: 8em;
+		object-fit: cover;
 	}
 
 		#intro .logo:before {
