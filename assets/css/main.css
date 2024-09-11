@@ -3439,7 +3439,7 @@ input, select, textarea {
 		margin: 0 0 1em 0;
 		overflow: hidden;
 		position: relative;
-		width: 8em;
+		width: 6em;
 		object-fit: cover;
 	}
 
