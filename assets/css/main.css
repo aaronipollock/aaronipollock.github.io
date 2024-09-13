@@ -3439,7 +3439,7 @@ input, select, textarea {
 		margin: 0 0 1em 0;
 		overflow: hidden;
 		position: relative;
-		width: 6em;
+		/* width: 6em; */
 		object-fit: cover;
 	}
 
@@ -3460,8 +3460,8 @@ input, select, textarea {
 		#intro .logo img {
 			display: block;
 			margin-left: -0.25em;
-			width: 8em;
-			height: 8em;
+			width: 16em;
+			height: 16em;
 			/* border-radius: 50%; */
 			object-fit: cover;
 		}
