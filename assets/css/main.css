@@ -3635,3 +3635,11 @@ input, select, textarea {
 			}
 
 		}
+
+.getsy-badges img {
+    transition: transform 0.2s ease;
+}
+
+.getsy-badges img:hover {
+    transform: scale(1.1);
+}
