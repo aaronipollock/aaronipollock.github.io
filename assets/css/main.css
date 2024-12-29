@@ -2556,7 +2556,7 @@ input, select, textarea {
 		font-size: 50px;
 	}
 
-	.tech__icon {
+	/* .tech__icon {
 		-webkit-transition: all 0.3s ease-in-out;
 		-moz-transition: all 0.3s ease-in-out;
 		-o-transition: all 0.3s ease-in-out;
@@ -2572,7 +2572,7 @@ input, select, textarea {
 		-o-transform: scale(1.2);
 		transform: scale(1.2);
 		cursor: pointer;
-	}
+	} */
 
 /* Posts */
 
