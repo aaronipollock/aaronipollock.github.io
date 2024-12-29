@@ -3699,7 +3699,6 @@ input, select, textarea {
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    font-size: 1.8em;  /* Reduced from 2.5em */
     margin: 0.5em;
     display: inline-block;
 }
