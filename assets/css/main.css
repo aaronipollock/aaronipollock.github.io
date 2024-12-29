@@ -3695,12 +3695,19 @@ input, select, textarea {
 }
 
 .technologies .tech__icon {
-    transition: transform 0.2s ease;
-    font-size: 2.5em;  /* Adjust size as needed */
-    margin: 0.5em;     /* Add some spacing between icons */
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-size: 2.5em;
+    margin: 0.5em;
+    display: inline-block; /* Ensure the icon is treated as a block element */
 }
 
 .technologies .tech__icon:hover {
-    transform: scale(1.2);  /* Slightly larger scale effect */
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
     cursor: pointer;
 }
