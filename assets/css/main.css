@@ -3643,3 +3643,22 @@ input, select, textarea {
 .getsy-badges img:hover {
     transform: scale(1.1);
 }
+
+.post .title h2 a {
+    position: relative;
+}
+
+.post .title h2 a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #2ebaae;
+    transition: width 0.3s ease;
+}
+
+.post .title h2 a:hover::after {
+    width: 100%;
+}
