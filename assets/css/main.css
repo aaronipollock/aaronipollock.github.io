@@ -2557,7 +2557,21 @@ input, select, textarea {
 	}
 
 	.tech__icon {
-		font-size: 100px; /* Adjust this size as needed */
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		font-size: 1.8em;
+		margin: 0.5em;
+		display: inline-block;
+	}
+
+	.tech__icon:hover {
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-o-transform: scale(1.2);
+		transform: scale(1.2);
+		cursor: pointer;
 	}
 
 /* Posts */
@@ -3699,6 +3713,7 @@ input, select, textarea {
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    font-size: 1.8em;
     margin: 0.5em;
     display: inline-block;
 }
