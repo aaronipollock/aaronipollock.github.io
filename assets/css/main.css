@@ -3693,3 +3693,14 @@ input, select, textarea {
         left: 100%;
     }
 }
+
+.technologies .tech__icon {
+    transition: transform 0.2s ease;
+    font-size: 2.5em;  /* Adjust size as needed */
+    margin: 0.5em;     /* Add some spacing between icons */
+}
+
+.technologies .tech__icon:hover {
+    transform: scale(1.2);  /* Slightly larger scale effect */
+    cursor: pointer;
+}
