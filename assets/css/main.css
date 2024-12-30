@@ -2524,6 +2524,17 @@ body {
 		display: flex;
 		align-items: flex-end;
 		margin-left: 20px;
+		gap: 0.5em;
+	}
+
+	.getsy-badges img {
+		max-width: 120%;
+		height: auto;
+		transition: transform 0.2s ease;
+	}
+
+	.getsy-badges img:hover {
+		transform: scale(1.1);
 	}
 
 	ul.posts {
@@ -3741,19 +3752,15 @@ form .row.gtr-uniform > .col-12 {
 form .row.gtr-uniform {
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;  /* Increase gap between elements */
-}
-
-form .row.gtr-uniform > .col-6.col-12-xsmall {
-    flex: 0 0 calc(50% - 1em);  /* Account for gap */
-    max-width: calc(50% - 1em);  /* Ensure max width */
+    gap: 1em;  /* Reduced spacing */
     margin: 0;
+    width: 100%;
 }
 
 form .row.gtr-uniform > .col-12 {
     flex: 0 0 100%;
     max-width: 100%;
-    margin: 1em 0;  /* Add vertical spacing */
+    margin: 0.5em 0;  /* Reduced vertical spacing */
 }
 
 /* Mobile adjustments */
@@ -3784,7 +3791,19 @@ form .row.gtr-uniform > .col-12 {
 }
 
 /* Increase skills icon size */
-.tech__icon {
-    font-size: 3em;  /* Increase icon size */
-    margin: 0.2em;   /* Add small spacing between icons */
+.getsy-badges {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 20px;
+    gap: 0.5em;  /* Add some spacing between badges */
+}
+
+.getsy-badges img {
+    max-width: 120%;  /* Increase from default 100% */
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.getsy-badges img:hover {
+    transform: scale(1.1);
 }
