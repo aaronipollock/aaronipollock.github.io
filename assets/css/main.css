@@ -3736,3 +3736,34 @@ form .row.gtr-uniform > .col-12 {
         margin-bottom: 1em;
     }
 }
+
+/* Form layout fixes */
+form .row.gtr-uniform {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;  /* Increase gap between elements */
+}
+
+form .row.gtr-uniform > .col-6.col-12-xsmall {
+    flex: 0 0 calc(50% - 1em);  /* Account for gap */
+    max-width: calc(50% - 1em);  /* Ensure max width */
+    margin: 0;
+}
+
+form .row.gtr-uniform > .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 1em 0;  /* Add vertical spacing */
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 480px) {
+    form .row.gtr-uniform {
+        gap: 1em;  /* Smaller gap on mobile */
+    }
+
+    form .row.gtr-uniform > .col-6.col-12-xsmall {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
