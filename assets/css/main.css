@@ -3658,3 +3658,25 @@ body {
         left: 100%;
     }
 } */
+
+/* Override any Font Awesome animations */
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+    -webkit-animation: none !important;
+    animation: none !important;
+}
+
+/* Override any keyframe animations */
+@-webkit-keyframes fa-spin {
+    0% { -webkit-transform: none; transform: none; }
+    100% { -webkit-transform: none; transform: none; }
+}
+
+@keyframes fa-spin {
+    0% { -webkit-transform: none; transform: none; }
+    100% { -webkit-transform: none; transform: none; }
+}
