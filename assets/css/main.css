@@ -3680,3 +3680,22 @@ body {
     0% { -webkit-transform: none; transform: none; }
     100% { -webkit-transform: none; transform: none; }
 }
+
+.image.featured,
+.image.featured::before,
+.image.featured::after {
+    animation: none !important;
+    -webkit-animation: none !important;
+    transition: none !important;
+    -webkit-transition: none !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+    background: none !important;
+}
+
+/* Also remove any existing @keyframes if found */
+@keyframes loading {
+    to {
+        left: 100%;
+    }
+}
