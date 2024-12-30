@@ -3684,3 +3684,28 @@ form .row.gtr-uniform > * {
         margin-bottom: 1em;  /* Add space between stacked fields */
     }
 }
+
+/* Form layout fixes */
+form .row.gtr-uniform {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0;
+    width: 100%;
+}
+
+form .row.gtr-uniform > .col-6 {
+    flex: 0 0 calc(50% - 0.5em);
+    margin: 0;
+}
+
+form .row.gtr-uniform > .col-12 {
+    flex: 0 0 100%;
+    margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+    form .row.gtr-uniform > .col-6 {
+        flex: 0 0 100%;
+    }
+}
