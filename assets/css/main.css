@@ -3667,3 +3667,20 @@ body {
         left: 100%;
     }
 }
+
+/* Form grid adjustments */
+form .row.gtr-uniform {
+    margin-left: -1.5em;  /* Add negative margin to offset padding */
+}
+
+form .row.gtr-uniform > * {
+    padding: 0 0 0 1.5em;  /* Add padding between columns */
+}
+
+/* Ensure proper stacking on mobile */
+@media screen and (max-width: 480px) {
+    .col-6.col-12-xsmall {
+        width: 100%;  /* Full width on mobile */
+        margin-bottom: 1em;  /* Add space between stacked fields */
+    }
+}
