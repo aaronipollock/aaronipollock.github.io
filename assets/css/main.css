@@ -3767,3 +3767,24 @@ form .row.gtr-uniform > .col-12 {
         max-width: 100%;
     }
 }
+
+/* Adjust contact form spacing */
+form .row.gtr-uniform {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;  /* Reduced spacing */
+    margin: 0;
+    width: 100%;
+}
+
+form .row.gtr-uniform > .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0.5em 0;  /* Reduced vertical spacing */
+}
+
+/* Increase skills icon size */
+.tech__icon {
+    font-size: 3em;  /* Increase icon size */
+    margin: 0.2em;   /* Add small spacing between icons */
+}
