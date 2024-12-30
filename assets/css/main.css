@@ -3627,38 +3627,6 @@ body {
     width: 100%;
 }
 
-/* Remove or comment out these animation-related rules */
-/* .image.featured {
-    position: relative;
-    overflow: hidden;
-}
-
-.image.featured img {
-    transition: opacity 0.3s ease;
-}
-
-.image.featured::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(
-        to right,
-        transparent,
-        rgba(255,255,255,0.3),
-        transparent
-    );
-    animation: loading 1.5s infinite;
-}
-
-@keyframes loading {
-    to {
-        left: 100%;
-    }
-} */
-
 /* Override any Font Awesome animations */
 .fa,
 .fab,
