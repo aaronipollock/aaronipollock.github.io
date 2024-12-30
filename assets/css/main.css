@@ -3627,7 +3627,8 @@ body {
     width: 100%;
 }
 
-.image.featured {
+/* Remove or comment out these animation-related rules */
+/* .image.featured {
     position: relative;
     overflow: hidden;
 }
@@ -3656,22 +3657,4 @@ body {
     to {
         left: 100%;
     }
-}
-
-/* Remove or comment out these classes */
-/* .technologies .tech__icon {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    margin: 0.5em;
-    display: inline-block;
-}
-
-.technologies .tech__icon:hover {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-    cursor: pointer;
 } */
