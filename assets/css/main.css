@@ -3640,6 +3640,23 @@ body {
     transform: scale(1.1);
 }
 
+/* --- Skills grid hard overrides (ensure these win) --- */
+#sidebar section .technologies {
+    align-items: end !important;
+}
+
+#sidebar section .technologies .tech__icon {
+    align-items: flex-end !important;
+    height: 64px !important;
+}
+
+/* TypeScript icon normalization */
+#sidebar section .technologies .devicon-typescript-original,
+#sidebar section .technologies .devicon-typescript-plain {
+    font-size: 1.34em !important;
+    margin-top: 0 !important;
+}
+
 .post .title h2 a {
     position: relative;
 }
