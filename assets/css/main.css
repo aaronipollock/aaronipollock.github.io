@@ -2526,6 +2526,7 @@ body {
 .technologies .devicon-typescript-original,
 .technologies .devicon-typescript-plain {
 	font-size: 1.3em;
+	margin-top: -6px; /* nudge up to align with row */
 }
 
 	.tech__icon:hover {
