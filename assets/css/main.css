@@ -3643,18 +3643,47 @@ body {
 /* --- Skills grid hard overrides (ensure these win) --- */
 #sidebar section .technologies {
     align-items: end !important;
+    align-content: end !important;
 }
 
 #sidebar section .technologies .tech__icon {
     align-items: flex-end !important;
+    align-self: end !important;
     height: 64px !important;
+    display: flex !important;
+    justify-content: center !important;
 }
 
-/* TypeScript icon normalization */
+/* TypeScript icon normalization - try different approach */
 #sidebar section .technologies .devicon-typescript-original,
 #sidebar section .technologies .devicon-typescript-plain {
-    font-size: 1.34em !important;
+    font-size: 1.3em !important;
     margin-top: 0 !important;
+    transform: translateY(2px) !important;
+}
+
+/* Alternative: Use CSS Grid line positioning */
+#sidebar section .technologies .tech__icon:last-child {
+    grid-column: 4;
+    grid-row: 5;
+    align-self: end;
+}
+
+/* Fallback: Try flexbox approach if grid isn't working */
+#sidebar section .technologies.flex-fallback {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    align-items: flex-end !important;
+}
+
+#sidebar section .technologies.flex-fallback .tech__icon {
+    width: 25% !important;
+    height: 64px !important;
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
+    margin-bottom: 0.8rem !important;
 }
 
 .post .title h2 a {
