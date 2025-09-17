@@ -2498,12 +2498,14 @@ body {
 
 	.technologies {
 		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		grid-template-rows: repeat(4, 1fr);
-		gap: 1rem;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		gap: 0.8rem;
 		justify-items: center;
 		align-items: center;
-		font-size: 50px;
+		font-size: 45px;
+		max-width: 100%;
+		overflow: hidden;
 	}
 
 	.tech__icon {
@@ -2511,10 +2513,12 @@ body {
 		-moz-transition: all 0.3s ease-in-out;
 		-o-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
-		font-size: 1.8em;
+		font-size: 1.6em;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		max-width: 100%;
+		max-height: 100%;
 	}
 
 	.tech__icon:hover {
