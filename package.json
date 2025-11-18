@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "devicon": "^2.16.0"
+  },
+  "scripts": {
+    "dev": "live-server --port=5173 --no-browser",
+    "start": "http-server -c-1 -p 5173"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
+    "nodemon": "^3.1.10"
+  }
+}
