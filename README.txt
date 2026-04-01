@@ -29,3 +29,10 @@ Credits:
 	Other:
 		jQuery (jquery.com)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
+
+		## Portfolio Variants
+
+- `portfolio-support`: current primary version focused on Support Engineering
+- `portfolio-fullstack`: previous version focused on Full-Stack SWE
+
+Switching between them is intentional for role targeting and positioning.

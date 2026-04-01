@@ -1,16 +1,10 @@
 <!DOCTYPE HTML>
-<!--
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
-	<title>Aaron Pollock — Full Stack Software Engineer Portfolio</title>
+	<title>Aaron Pollock — Support Engineer | API Debugging & Backend Systems</title>
 	<meta charset="utf-8" />
-	<meta name="description" content="Aaron POllock — Software Engineer specializing in full-stack web development" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="Aaron Pollock is a support-oriented engineer focused on API debugging, backend systems, authentication, observability, and technical problem-solving." />	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<!-- <link rel="stylesheet" href="devicon.min.css"> -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
@@ -21,101 +15,49 @@
 	<!-- Wrapper -->
 	<div id="wrapper">
 
-		<!-- Header -->
-		<header id="header">
-			<!-- <h1><a href="index.html">Portfolio</a></h1> -->
-			<!-- <nav class="links">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Skills</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav> -->
-			<!-- <nav class="main">
-				<ul>
-					<li class="search">
-						<a class="fa-search" href="#search">Search</a>
-						<form id="search" method="get" action="#">
-							<input type="text" name="query" placeholder="Search" />
-						</form>
-					</li>
-					<li class="menu">
-						<a class="fa-bars" href="#menu">Menu</a>
-					</li>
-				</ul>
-			</nav> -->
-		</header>
-
-		<!-- Menu -->
-		<section id="menu">
-
-			<!-- Search -->
-			<section>
-				<form class="search" method="get" action="#">
-					<input type="text" name="query" placeholder="Search" />
-				</form>
-			</section>
-
-			<!-- Links -->
-			<section>
-				<ul class="links">
-					<li>
-						<a href="#">
-							<h3>Lorem ipsum</h3>
-							<p>Feugiat tempus veroeros dolor</p>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<h3>Dolor sit amet</h3>
-							<p>Sed vitae justo condimentum</p>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<h3>Feugiat veroeros</h3>
-							<p>Phasellus sed ultricies mi congue</p>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<h3>Etiam sed consequat</h3>
-							<p>Porta lectus amet ultricies</p>
-						</a>
-					</li>
-				</ul>
-			</section>
-
-			<!-- Actions -->
-			<section>
-				<ul class="actions stacked">
-					<li><a href="#" class="button large fit">Log In</a></li>
-				</ul>
-			</section>
-
-		</section>
-
 		<!-- Main -->
 		<div id="main">
 
-			<!-- Post (Memory Palace) -->
+			<!-- Post (Debugging) -->
+			<article class="post">
+				<header>
+					<div class="title">
+						<h2>Debugging & System Investigation</h2>
+						<p>Examples of how I approach reliability, observability, and root-cause analysis in real applications.</p>
+					</div>
+				</header>
+
+				<h3>Case Study: Improving Observability in Low·sAI</h3>
+				<p><b>Problem:</b> As backend complexity increased (authentication, AI image generation, saved user data), it became difficult to trace request flow and diagnose failures when API requests did not behave as expected.</p>
+				<p><b>Symptoms:</b> Errors were inconsistent and difficult to reproduce, including failed image generation requests when authentication tokens expired or became out of sync with backend state.</p>
+				<p><b>Investigation:</b> I analyzed request flow across routes and identified gaps in visibility. Logging was inconsistent, and there was no reliable way to correlate requests across the system.</p>
+				<p><b>Solution:</b> I introduced structured logging and request tracing to make API behavior observable, allowing requests to be followed across the application and failures to be isolated more quickly.</p>
+				<p><b>Result:</b> This improved debugging speed, reduced ambiguity when diagnosing issues, and created a more maintainable foundation for future backend work.</p>
+				<h3>How I Debug</h3>
+				<p>
+				I approach debugging as a structured process: identify the observable symptom, isolate where in the system it originates (client, API, database, or external service), and test hypotheses incrementally.
+				I rely on logging, request tracing, and controlled experiments to narrow down root causes, especially in cases involving authentication, validation, and third-party integrations.
+				</p>
+			</article>
+
+			<!-- Post (Low·sAI) -->
 			<article class="post">
 				<header>
 					<div class="title">
 						<h2><a href="https://www.low-sai.com">Low·sAI</a></h2>
-						<p>A learning platform that helps users memorize information by creating visual memory palaces with AI-generated imagery.</p>
+						<p>An API-driven learning platform used to explore backend reliability, authentication, AI service integration, and observability.</p>
 					</div>
 					<div class="meta">
 						<time class="published" datetime="2024-12-01">September 2025</time>
-						<!-- <a href="#" class="author"><span class="name">Aaron Pollock</span><img src="images/avatar.jpg"
-								alt="" /></a> -->
 					</div>
 				</header>
 				<a href="https://www.low-sai.com" class="image featured"><img
 						src="images/lowsai-splash.png" alt="" /></a>
-				<p>An innovative learning platform that combines the ancient memory technique of the "method of loci" with modern AI technology. Users can create personalized memory palaces with custom room layouts, generate AI-powered images for memorable items using Stability AI, and save multiple memory palaces. Features include interactive visualizer with drag-and-drop functionality, secure JWT-based authentication with CSRF protection, and responsive design for all device types.</p>
+						<p>
+							Low·sAI is a full-stack application centered on backend behavior: authentication, request handling, AI service integration, and persistent user data.
+							I focused on improving observability and debugging workflows by introducing structured logging and clarifying request flow, particularly in areas where authentication state, API responses, and external services interacted.
+							This project reflects the type of work I’m most interested in: diagnosing issues across system boundaries and making backend behavior easier to understand.
+						</p>
 				<footer>
 					<ul class="actions">
 						<li><a href="https://www.low-sai.com" class="button large">View Live Site</a>
@@ -128,35 +70,26 @@
 						<img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="Express.js" style="max-width: 100%;">
 						<img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" style="max-width: 100%;">
 						<img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" style="max-width: 100%;">
-						<!-- <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" style="max-width: 100%;">
-						<img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" style="max-width: 100%;"> -->
 					</div>
-					<!-- <ul class="stats">
-						<li><a href="#">Technologies</a></li>
-						<li><a href="#" class="icon solid fa-heart">28</a></li>
-						<li><a href="#" class="icon solid fa-comment">128</a></li>
-					</ul> -->
 				</footer>
 			</article>
 
-			<!-- Post -->
+			<!-- Post (Note2be) -->
 			<article class="post">
 				<header>
 					<div class="title">
 						<h2><a href="https://capstone-project-xsl6.onrender.com">Note2be</a></h2>
-						<p>A full-stack note-taking web application inspired by Evernote.</p>
-					</div>
+						<p>A full-stack application focused on CRUD workflows, data organization, and backend-driven user content management.</p>					</div>
 					<div class="meta">
 						<time class="published" datetime="2015-11-01">August 2024</time>
-						<!-- <a href="#" class="author"><span class="name">Aaron Pollock</span><img src="images/avatar.jpg"
-								alt="" /></a> -->
 					</div>
 				</header>
 				<a href="https://capstone-project-xsl6.onrender.com" class="image featured"><img
 						src="images/shakespeare-splash.png" alt="" /></a>
-				<p>Built using a modern full-stack approach, this application provides users with the ability to create,
-					edit, delete, and organize notes into notebooks. Each note can be enriched with rich text formatting
-					via a Quill.js editor and categorized using a custom tagging system.</p>
+						<p>
+							Note2be is a full-stack notes platform built to manage structured user content across a Python backend and React frontend.
+							I used it to work through data modeling, API design, and maintaining consistency across note creation, editing, organization, and tagging workflows.
+						</p>
 				<footer>
 					<ul class="actions">
 						<li><a href="https://capstone-project-xsl6.onrender.com" class="button large">View Live Site</a>
@@ -171,11 +104,6 @@
 						<img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" style="max-width: 100%;">
 						<img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" style="max-width: 100%;">
 					</div>
-					<!-- <ul class="stats">
-						<li><a href="#">Technologies</a></li>
-						<li><a href="#" class="icon solid fa-heart">28</a></li>
-						<li><a href="#" class="icon solid fa-comment">128</a></li>
-					</ul> -->
 				</footer>
 			</article>
 
@@ -184,8 +112,7 @@
 				<header>
 					<div class="title">
 						<h2><a href="https://etsyclone-4ah1.onrender.com/">Getsy</a></h2>
-						<p>A partial clone of the popular e-commerce website Etsy.</p>
-					</div>
+						<p>An e-commerce application built to explore authentication, relational workflows, and backend state management.</p>					</div>
 					<div class="meta">
 						<time class="published" datetime="2015-10-25">July 2024</time>
 						<!-- <a href="#" class="author"><span class="name">Aaron Pollock</span><img src="images/avatar.jpg"
@@ -194,9 +121,10 @@
 				</header>
 				<a href="https://etsyclone-4ah1.onrender.com/" class="image featured"><img src="images/getsy-splash.png"
 						alt="" /></a>
-				<p>Developed with a robust tech stack, Getsy delivers a seamless shopping experience where buyers can
-					explore a wide range of products, manage their carts, place orders, and review purchases while
-					giving sellers the ability to manage their listings effectively.</p>
+						<p>
+							Getsy is a full-stack commerce project centered on user roles, cart and order flows, and seller-managed inventory.
+							The backend work involved handling authenticated actions, coordinating relational data, and designing predictable API behavior across multiple user workflows.
+						</p>
 				<footer>
 					<ul class="actions">
 						<li><a href="https://etsyclone-4ah1.onrender.com/" class="button large">View Live Site</a>
@@ -211,11 +139,6 @@
 						<img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" style="max-width: 100%;">
 						<img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" style="max-width: 100%;">
 					</div>
-					<!-- <ul class="stats">
-						<li><a href="#">Technologies</a></li>
-						<li><a href="#" class="icon solid fa-heart">28</a></li>
-						<li><a href="#" class="icon solid fa-comment">128</a></li>
-					</ul> -->
 				</footer>
 			</article>
 
@@ -224,15 +147,16 @@
 				<header>
 					<div class="title">
 						<h2><a href="https://aaron-pollock-api-project.onrender.com/">SyncUp</a></h2>
-						<p>A full-stack Meetup clone that enables users to create, join, and manage groups and events</p>
-					</div>
+						<p>A RESTful event and group-management application focused on validation, authorization, and relational API workflows.</p>					</div>
 					<div class="meta">
 						<time class="published" datetime="2024-06-01">June 2024</time>
 					</div>
 				</header>
 				<a href="https://aaron-pollock-api-project.onrender.com/" class="image featured"><img src="images/syncup-splash.png" alt="" /></a>
-				<p>A feature-rich web application that replicates core Meetup.com functionality, allowing users to create and join groups, organize and RSVP to events, and manage their social connections. Features include user authentication, group creation and management, event scheduling with real-time validation, and responsive design for optimal viewing across all devices.</p>
-				<footer>
+				<p>
+					SyncUp is a full-stack application built around group, event, and RSVP workflows backed by a relational database.
+					It gave me experience designing REST endpoints, enforcing authorization rules, validating user actions, and handling the edge cases that emerge when multiple user roles interact with shared data.
+				</p>				<footer>
 					<ul class="actions">
 						<li><a href="https://aaron-pollock-api-project.onrender.com/" class="button large">View Live Site</a></li>
 					</ul>
@@ -264,7 +188,7 @@
 				<a class="logo"><img src="images/profile-pic-copy-2.png" alt="" /></a>
 				<header>
 					<h2>Aaron I. Pollock</h2>
-					<p>Software Engineer specializing in full-stack development</p>
+					<p>I investigate API, authentication, and integration issues across backend systems.</p>
 					<!-- <a href="documents/AaronPollockResume.pdf" target="_blank" class="button">Download Resume</a> -->
 				</header>
 			</section>
@@ -273,23 +197,25 @@
 			<section class="blurb">
 				<h2>About Me</h2>
 				<p>
-					I'm a full-stack software engineer with a diverse background in education and entertainment. My
-					journey into software development began as an extension of my tutoring career, but it quickly grew
-					into a passion for creating, solving complex problems, and learning new technologies.
+					I’m a support-oriented engineer with a backend foundation in Node.js, Express, Python, PostgreSQL, and MongoDB.
+					I’m most effective when investigating issues across APIs, authentication flows, relational data, and third-party integrations.
 				</p>
 				<p>
-					With a foundation in both software development and creative storytelling, I aim to create products
-					that are not only functional but also impactful and thought-provoking.
+					I’ve built and maintained backend services for full-stack applications, but the work I’m most drawn to is understanding how systems behave in real conditions:
+					tracing requests, isolating failure points, improving observability, and communicating root causes clearly.
+				</p>
+				<p>
+					My background in education shapes how I work. I value clarity, structured thinking, and explaining technical problems in a way that helps both users and engineers move faster.
 				</p>
 				<ul class="actions">
-					<li><a href="documents/Aaron_Pollock_Portfolio_Resume.pdf" class="button">Check Out My Resume</a></li>
+					<li><a href="documents/Aaron_Pollock_Portfolio_Resume.pdf" class="button">View Resume</a></li>
 				</ul>
 			</section>
 
 			<!-- Posts List -->
 			<section>
-				<h2 class="skills-heading">Skills</h2>
-				<div class="technologies">
+				<h2 class="skills-heading">Technologies & Support Focus</h2>
+				<p>Backend and support-oriented tools for APIs, authentication, data modeling, debugging, and cloud-based deployment.</p>				<div class="technologies">
 					<i class="tech__icon devicon-javascript-plain colored"></i>
 					<i class="tech__icon devicon-react-original-wordmark colored"></i>
 					<i class="tech__icon devicon-redux-plain colored"></i>
@@ -314,16 +240,7 @@
 				</div>
 			</section>
 
-			<!-- About -->
-			<!-- <section class="blurb">
-				<h2>About</h2>
-				<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
-					amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.
-				</p>
-				<ul class="actions">
-					<li><a href="#" class="button">Learn More</a></li>
-				</ul>
-			</section> -->
+			<p>I’m currently interested in Support Engineer, Technical Support Engineer, and backend-leaning roles involving APIs, integrations, and production systems.</p>
 
 			<!-- Contact -->
 			<section>
