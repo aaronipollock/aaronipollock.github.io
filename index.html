@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Aaron Pollock — Support Engineer | API Debugging & Backend Systems</title>
+	<title>Aaron Pollock — Software Engineer | Full-Stack & Backend Systems (APIs, Observability)</title>
 	<meta charset="utf-8" />
 	<meta name="description" content="Aaron Pollock is a support-oriented engineer focused on API debugging, backend systems, authentication, observability, and technical problem-solving." />	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,17 +22,17 @@
 			<article class="post">
 				<header>
 					<div class="title">
-						<h2>Debugging & System Investigation</h2>
+						<h2>Production Behavior & Observability (Low·sAI Case Study)</h2>
 						<p>Examples of how I approach reliability, observability, and root-cause analysis in real applications.</p>
 					</div>
 				</header>
 
-				<h3>Case Study: Improving Observability in Low·sAI</h3>
-				<p><b>Problem:</b> As backend complexity increased (authentication, AI image generation, saved user data), it became difficult to trace request flow and diagnose failures when API requests did not behave as expected.</p>
-				<p><b>Symptoms:</b> Errors were inconsistent and difficult to reproduce, including failed image generation requests when authentication tokens expired or became out of sync with backend state.</p>
-				<p><b>Investigation:</b> I analyzed request flow across routes and identified gaps in visibility. Logging was inconsistent, and there was no reliable way to correlate requests across the system.</p>
-				<p><b>Solution:</b> I introduced structured logging and request tracing to make API behavior observable, allowing requests to be followed across the application and failures to be isolated more quickly.</p>
-				<p><b>Result:</b> This improved debugging speed, reduced ambiguity when diagnosing issues, and created a more maintainable foundation for future backend work.</p>
+				<h3>Case Study: Observability in a Growing API System</h3>
+				<p><b>Context:</b> As I expanded Low·sAI to include authentication, AI integrations, and persistent user data, backend behavior became harder to trace.</p>
+				<p><b>Break:</b> API failures became inconsistent—particularly around expired authentication tokens and third-party API responses.</p>
+				<p><b>Diagnosis:</b> I traced request flow across middleware and endpoints and identified a lack of consistent logging and request correlation.</p>
+				<p><b>Fix:</b> Implemented structured logging, request IDs, and centralized error handling to make system behavior observable.</p>
+				<p><b>Result:</b> Improved debugging speed, clearer failure isolation, and a more maintainable backend architecture.</p>
 				<h3>How I Debug</h3>
 				<p>
 				I approach debugging as a structured process: identify the observable symptom, isolate where in the system it originates (client, API, database, or external service), and test hypotheses incrementally.
@@ -54,9 +54,13 @@
 				<a href="https://www.low-sai.com" class="image featured"><img
 						src="images/lowsai-splash.png" alt="" /></a>
 						<p>
-							Low·sAI is a full-stack application centered on backend behavior: authentication, request handling, AI service integration, and persistent user data.
-							I focused on improving observability and debugging workflows by introducing structured logging and clarifying request flow, particularly in areas where authentication state, API responses, and external services interacted.
-							This project reflects the type of work I’m most interested in: diagnosing issues across system boundaries and making backend behavior easier to understand.
+							Low·sAI is a full-stack application I built using React, Node.js/Express, and MongoDB, focused on API workflows, authentication, and AI service integration.
+
+							As the system grew, I encountered inconsistent API failures—particularly around expired authentication tokens and third-party requests—which made behavior difficult to trace.
+
+							To address this, I implemented structured logging, request tracing, and centralized error handling, making it possible to follow requests across the system and isolate failures more reliably.
+
+							This improved debugging speed and established a more observable, maintainable backend.
 						</p>
 				<footer>
 					<ul class="actions">
@@ -188,34 +192,34 @@
 				<a class="logo"><img src="images/profile-pic-copy-2.png" alt="" /></a>
 				<header>
 					<h2>Aaron I. Pollock</h2>
-					<p>I investigate API, authentication, and integration issues across backend systems.</p>
-				</header>
+					<p>I build and debug API-driven systems, with a focus on backend reliability and observability.</p>				</header>
 			</section>
 
 			<!-- About -->
 			<section class="blurb">
 				<h2>About Me</h2>
 				<p>
-					I’m a support-oriented engineer with a backend foundation in Node.js, Express, Python, PostgreSQL, and MongoDB.
-					I’m most effective when investigating issues across APIs, authentication flows, relational data, and third-party integrations.
+					I’m a software engineer with a backend foundation in Node.js, Express, Python, PostgreSQL, and MongoDB.
+					I build full-stack applications and backend services with a focus on API design, data flow, and system reliability.
 				</p>
+
 				<p>
-					I’ve built and maintained backend services for full-stack applications, but the work I’m most drawn to is understanding how systems behave in real conditions:
-					tracing requests, isolating failure points, improving observability, and communicating root causes clearly.
+					As systems grow in complexity, I focus on understanding how they behave in production—tracing requests, isolating failure points, and improving observability through logging and instrumentation.
+					I’m comfortable diagnosing issues across authentication, data, and third-party integrations.
 				</p>
+
 				<p>
 					My background in education shapes how I work. I value clarity, structured thinking, and explaining technical problems in a way that helps both users and engineers move faster.
 				</p>
 				<ul class="actions">
-					<li><a href="documents/AaronIPollockResumeTSE.pdf" class="button">View Resume</a></li>
+					<li><a href="documents/AaronIPollockResumeSWE.pdf" class="button">View Resume</a></li>
 				</ul>
 			</section>
 
 			<!-- Posts List -->
 			<section>
 				<h2 class="skills-heading">Technologies & Support Focus</h2>
-				<p>Backend and support-oriented tools for APIs, authentication, data modeling, debugging, and cloud-based deployment.</p>				<div class="technologies">
-					<i class="tech__icon devicon-javascript-plain colored"></i>
+				<p>Technologies for building and operating API-driven systems, including backend services, authentication, data modeling, debugging, and cloud deployment.</p>					<i class="tech__icon devicon-javascript-plain colored"></i>
 					<i class="tech__icon devicon-react-original-wordmark colored"></i>
 					<i class="tech__icon devicon-redux-plain colored"></i>
 					<i class="tech__icon devicon-python-plain-wordmark colored"></i>
@@ -239,8 +243,7 @@
 				</div>
 			</section>
 
-			<p>I’m currently interested in Support Engineer, Technical Support Engineer, and backend-leaning roles involving APIs, integrations, and production systems.</p>
-
+			<p>I’m currently interested in backend and full-stack engineering roles focused on APIs, integrations, and production systems.</p>
 			<!-- Contact -->
 			<section>
 				<h2>Get in Touch!</h2>
