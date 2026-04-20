@@ -34,7 +34,7 @@
 				<p>
 					<b>Context:</b> As I expanded Low·sAI to include authentication, AI integrations, and persistent user data, backend behavior became harder to trace.<br>
 					<b>Break:</b> API failures became inconsistent—particularly around expired authentication tokens and third-party API responses.<br>
-					<b>Diagnosis:</b> I traced request flow across middleware and endpoints and identified a lack of consistent logging and request correlation.<br>
+					<b>Diagnosis:</b> I introduced structured logging, request tracing, and controlled latency/timeout experiments to isolate where failures and slowdowns originated.<br>
 					<b>Fix:</b> Implemented structured logging, request IDs, and centralized error handling to make system behavior observable.<br>
 					<b>Result:</b> Improved debugging speed, clearer failure isolation, and a more maintainable backend architecture.<br>
 				</p>
@@ -46,8 +46,13 @@
 				</p>
 				<h3>How I Debug</h3>
 				<p>
-				I approach debugging as a structured process: identify the observable symptom, isolate where in the system it originates (client, API, database, or external service), and test hypotheses incrementally.
-				I rely on logging, request tracing, and controlled experiments to narrow down root causes, especially in cases involving authentication, validation, and third-party integrations.
+					I treat debugging as an investigation, not guesswork. I start by identifying the observable symptom, then use logs and traces to narrow down where time or failures are actually occurring.
+				</p>
+				<p>
+					When behavior isn’t clear, I introduce controlled conditions—such as artificial latency or reduced timeouts—to test specific hypotheses. This helps distinguish between internal bottlenecks and external dependency issues, rather than relying on assumptions.
+				</p>
+				<p>
+					The goal is to isolate cause, validate it with evidence, and ensure the system responds predictably under both normal and failure conditions.
 				</p>
 			</article>
 
