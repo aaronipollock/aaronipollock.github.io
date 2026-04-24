@@ -41,16 +41,14 @@
 				<p>
 					→ Read the full latency & timeout debugging case study
 					<a href="https://github.com/aaronipollock/memory-palace/blob/main/docs/observability/latency-timeout-case-study.md" target="_blank">
-					  <i><u>here</u></i>
+					  <i><u>HERE</u></i>
 					</a>
 				</p>
 				<h3>How I Debug</h3>
 				<p>
-					I treat debugging as an investigation, not guesswork. I start by identifying the observable symptom, then use logs and traces to narrow down where time or failures are actually occurring.
-				</p>
+					I treat debugging as an investigation, not guesswork. I think in layers: client, API, database, external service. I start by identifying the observable symptom, then work inward to isolate where the failure actually originates.				</p>
 				<p>
-					When behavior isn’t clear, I introduce controlled conditions, such as artificial latency or reduced timeouts, to test specific hypotheses. This helps distinguish between internal bottlenecks and external dependency issues, rather than relying on assumptions.
-				</p>
+					When behavior isn't clear, I introduce controlled conditions, such as artificial latency or reduced timeouts, to test specific hypotheses. This helps distinguish between internal bottlenecks and external dependency issues, rather than relying on assumptions.				</p>
 				<p>
 					The goal is to isolate cause, validate it with evidence, and ensure the system responds predictably under both normal and failure conditions.
 				</p>
@@ -212,17 +210,19 @@
 			<section class="blurb">
 				<h2>About Me</h2>
 				<p>
-					I’m a software engineer with a backend foundation in Node.js, Express, Python, PostgreSQL, and MongoDB.
-					I build full-stack applications and backend services with a focus on API design, data flow, and system reliability.
+					I build and debug API-driven backend systems, with a focus on reliability, observability, and integration design.
 				</p>
 
 				<p>
-					As systems grow in complexity, I focus on understanding how they behave in production—tracing requests, isolating failure points, and improving observability through logging and instrumentation.
-					I’m comfortable diagnosing issues across authentication, data, and third-party integrations.
+					My work centers on Node.js, Express, Python, PostgreSQL, and MongoDB, building RESTful services, designing data models, and making production systems easier to understand and maintain. I'm comfortable tracing failures across authentication, data, and third-party integrations, and I treat debugging as a structured process: isolating variables, validating hypotheses, and improving visibility through logging and instrumentation.
 				</p>
 
 				<p>
-					My background in education shapes how I work. I value clarity, structured thinking, and explaining technical problems in a way that helps both users and engineers move faster.
+					Thirteen years of teaching taught me that if you can't explain why something failed, you probably don't fully understand it yet. That standard shapes how I approach cross-functional communication and stakeholder-facing debugging: translating root cause analysis into clear, actionable explanations for both engineers and non-technical audiences. It's also what drew me to observability, the discipline of making invisible system behavior legible.
+				</p>
+
+				<p>
+					I'm currently interested in backend engineering and technical support roles where I can work close to production, whether that's building features, resolving integration issues, or improving how teams understand system behavior.
 				</p>
 				<ul class="actions">
 					<li><a href="documents/AaronIPollockResumeSWE.pdf" class="button">View Resume</a></li>
