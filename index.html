@@ -23,7 +23,7 @@
 				<header>
 					<div class="title">
 						<h2>Production Behavior & Observability (Low·sAI Case Study)</h2>
-						<p>Examples of how I approach reliability, observability, and root-cause analysis in real applications.</p>
+						<p>A slow endpoint is not the same as a slow dependency. Here's how I learned that the hard way on Low·sAI</p>
 					</div>
 					<div class="meta">
 						<time class="published" datetime="2024-12-01">April 2026</time>
@@ -43,14 +43,6 @@
 					<a href="https://github.com/aaronipollock/memory-palace/blob/main/docs/observability/latency-timeout-case-study.md" target="_blank">
 					  <i><u>HERE</u></i>
 					</a>
-				</p>
-				<h3>How I Debug</h3>
-				<p>
-					I treat debugging as an investigation, not guesswork. I think in layers: client, API, database, external service. I start by identifying the observable symptom, then work inward to isolate where the failure actually originates.				</p>
-				<p>
-					When behavior isn't clear, I introduce controlled conditions, such as artificial latency or reduced timeouts, to test specific hypotheses. This helps distinguish between internal bottlenecks and external dependency issues, rather than relying on assumptions.				</p>
-				<p>
-					The goal is to isolate cause, validate it with evidence, and ensure the system responds predictably under both normal and failure conditions.
 				</p>
 			</article>
 
