@@ -2541,6 +2541,18 @@ body {
 
 /* Posts */
 
+	.case-study h4 {
+		margin-bottom: 0.5rem;
+  	}
+
+	.case-study {
+		border: 1px solid rgba(160,160,160,.2);
+		padding: 1.5rem;
+		margin: 2rem 0;
+		border-radius: 6px;
+		background: rgba(255,255,255,.02);
+	}
+
 	.getsy-badges {
 		display: flex;
 		align-items: flex-end;

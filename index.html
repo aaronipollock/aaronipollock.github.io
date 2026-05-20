@@ -22,28 +22,62 @@
 			<article class="post">
 				<header>
 					<div class="title">
-						<h2>Production Behavior & Observability (Low·sAI Case Study)</h2>
-						<p>A slow endpoint is not the same as a slow dependency. Here's how I learned that the hard way on Low·sAI</p>
+						<h2>Production Debugging & Observability (Low·sAI Case Studies)</h2>
+						<p>
+							As Low·sAI grew to include authentication, AI integrations, and persistent user data, I began treating it like a production system rather than just a feature project.
+						</p>
+
+						<p>
+							I started building structured logging, request tracing, observability tooling, and controlled failure experiments to better understand:
+						</p>
+
+						<ul>
+							<li>authentication recovery behavior</li>
+							<li>latency and timeout handling</li>
+							<li>request tracing across API boundaries</li>
+							<li>failure isolation and debugging workflows</li>
+						</ul>
+
+						<p>
+							The following case studies document how I investigated and diagnosed real backend behavior under controlled failure conditions.
+						</p>
 					</div>
 					<div class="meta">
 						<time class="published" datetime="2024-12-01">April 2026</time>
 					</div>
 				</header>
 
-				<h3>Case Study: Observability in a Growing API System</h3>
-				<p>
-					<b>Context:</b> As I expanded Low·sAI to include authentication, AI integrations, and persistent user data, backend behavior became harder to trace.<br>
-					<b>Break:</b> API failures became inconsistent—particularly around expired authentication tokens and third-party API responses.<br>
-					<b>Diagnosis:</b> I introduced structured logging, request tracing, and controlled latency/timeout experiments to isolate where failures and slowdowns originated.<br>
-					<b>Fix:</b> Implemented structured logging, request IDs, and centralized error handling to make system behavior observable.<br>
-					<b>Result:</b> Improved debugging speed, clearer failure isolation, and a more maintainable backend architecture.<br>
-				</p>
-				<p>
-					→ Read the full latency & timeout debugging case study
-					<a href="https://github.com/aaronipollock/memory-palace/blob/main/docs/observability/latency-timeout-case-study.md" target="_blank">
-					  <i><u>HERE</u></i>
+				<div class="case-study">
+
+					<h4>Diagnosing Latency and Timeout Behavior with Sentry</h4>
+
+					<p>
+					  Investigating request latency, upstream dependency timing, and timeout handling using Sentry tracing and structured logging.
+					</p>
+
+					<a href="https://github.com/aaronipollock/memory-palace/blob/main/docs/observability/latency-timeout-case-study.md"
+					   target="_blank"
+					   class="button small">
+					   Read Case Study
 					</a>
-				</p>
+
+				</div>
+
+				<div class="case-study">
+
+					<h4>Debugging an Unreachable JWT Recovery Flow</h4>
+
+					<p>
+					  Investigating why expired bearer-token requests bypassed JWT refresh recovery despite a functioning refresh implementation.
+					</p>
+
+					<a href="https://github.com/aaronipollock/memory-palace/blob/main/docs/observability/unreachable-jwt-refresh-flow-case-study.md"
+					   target="_blank"
+					   class="button small">
+					   Read Case Study
+					</a>
+
+				</div>
 			</article>
 
 			<!-- Post (Low·sAI) -->
@@ -62,8 +96,8 @@
 						<p>
 							Low·sAI is a full-stack application I built using React, Node.js/Express, and MongoDB, focused on API workflows, authentication, and AI service integration.
 							As the system grew, I encountered inconsistent API failures—particularly around expired authentication tokens and third-party requests—which made behavior difficult to trace.
-							To address this, I implemented structured logging, request tracing, and centralized error handling, making it possible to follow requests across the system and isolate failures more reliably.
-							This improved debugging speed and established a more observable, maintainable backend.
+							Those debugging and observability workflows eventually became their own set of production-oriented case studies focused on authentication recovery behavior, latency analysis, request tracing, and controlled failure investigation.
+							The project evolved from a standard full-stack application into a platform for exploring how distributed API systems behave under real failure conditions.
 						</p>
 				<footer>
 					<ul class="actions">
@@ -195,14 +229,17 @@
 				<a class="logo"><img src="images/profile-pic-copy-2.png" alt="" /></a>
 				<header>
 					<h2>Aaron I. Pollock</h2>
-					<p>I build and debug API-driven systems, with a focus on backend reliability and observability.</p>				</header>
+					<p>
+						Backend-focused engineer working on API reliability and production debugging.
+					</p>
+				</header>
 			</section>
 
 			<!-- About -->
 			<section class="blurb">
 				<h2>About Me</h2>
 				<p>
-					I build and debug API-driven backend systems, with a focus on reliability, observability, and integration design.
+					I build and debug API-driven backend systems, with a particular interest in authentication flows, production behavior, observability, and failure analysis.
 				</p>
 
 				<p>
