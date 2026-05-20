@@ -2548,9 +2548,21 @@ body {
 	.case-study {
 		border: 1px solid rgba(160,160,160,.2);
 		padding: 1.5rem;
-		margin: 2rem 0;
+		margin: 0;
 		border-radius: 6px;
 		background: rgba(255,255,255,.02);
+	}
+
+	.post > .case-study:first-of-type {
+		margin-top: 2rem;
+	}
+
+	.post > .case-study:last-of-type {
+		margin-bottom: 2rem;
+	}
+
+	.post > .case-study + .case-study {
+		margin-top: 2.5rem;
 	}
 
 	.getsy-badges {
